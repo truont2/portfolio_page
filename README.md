@@ -13,25 +13,25 @@ This project utilized HTML and CSS to build a responsive adn stylish portfolio p
 
 This project taught me how to completely build a portfolio webpage and to solve various CSS issues. I especially learned to better understand flexbox and how it works in the works section to create a grid like layout. 
 
-A problem I ran into was adjusting the responsiveness of the page. While the layout for fullscreen and mobile are satisfactory, any sizes between resulted in a margin or some spacing on the right cutting off the page content as seen below. I spent a good amount of time on fixing this issue but I was not able to find a solution. In the future, I hope to better understand the issue and potentially solve it in order to make the website as responsive as possible. 
+A problem I ran into was adjusting the responsiveness of the page. While the layout for fullscreen and mobile are satisfactory, any sizes between resulted in a margin or some spacing on the right cutting off the page content as seen below. This may be caused by the header which also has some formatting issues. I spent a good amount of time on fixing this issue but I was not able to find a solution. In the future, I hope to better understand the issue and potentially solve it in order to make the website as responsive as possible. 
 
 ### Screenshots
 Fullscreen screenshot:
 
-![website screenshot](./Assets\images\webpage1.PNG)
-![website screenshot](./Assets\images\webpage2.PNG)
+![website screenshot](./Assets/images/webpage1.PNG)
+![website screenshot](./Assets/images/webpage2.PNG)
 
 Mobile Screenshots:
 
-![website screenshot](./Assets\images\mobile1.PNG)
-![website screenshot](./Assets\images\mobile2.PNG)
-![website screenshot](./Assets\images\mobile3.PNG)
+![website screenshot](./Assets/images/mobile1.PNG)
+![website screenshot](./Assets/images/mobile1.PNG)
+![website screenshot](./Assets/images/mobile1.PNG)
 
 In-between sizing with margin issue:
 
-![website screenshot](./Assets\images\page-problem.PNG)
+![website screenshot](./Assets/images/page-problem.PNG)
 
-### Website link address:
+### Website link
 https://truont2.github.io/portfolio_page/
 
 ### Resources
