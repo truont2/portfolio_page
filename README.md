@@ -32,7 +32,7 @@ In-between sizing with margin issue:
 ![website screenshot](./Assets\images\page-problem.PNG)
 
 ### Website link address:
-
+https://truont2.github.io/portfolio_page/
 
 ### Resources
 Credits: 
