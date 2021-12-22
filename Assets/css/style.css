@@ -1,15 +1,18 @@
+/* variables for colors on page */
 :root {
     --border-color: #574935;
     --background-color1: #a2a5a8;
     --background-color2: #be8c3f;
 }
 
+/* universal reset  */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* cuases the page to slowly scroll to content when links are pressed */
 html {
     scroll-behavior: smooth;
 }
@@ -24,17 +27,18 @@ a {
 }
 
 img {
-    display: block;
-    width: 100%;
+    width: 100vw;
 }
 
 body {
+    display: block;
     position: relative;
     background-image: linear-gradient(62deg, #a2a5a8 0%, #be8c3f 100%);
 
 }
 
-
+/* header and navbar styling */
+/* styling for the header */
 header {
     position: fixed;
     top: 0;
@@ -47,6 +51,7 @@ header {
     z-index: 10;
 }
 
+/* styling for the nav bar link list */
 .nav-list {
     width: 35vw;
     display: flex;
@@ -54,16 +59,13 @@ header {
     justify-content: space-around;
 }
 
-.nav-list {
-    display: flex;
-    margin-right: 2rem;
-}
-
+/*styling for each link in the navbar */
 .nav-list a {
     display: block;
     font-size: 1.5rem;
 }
 
+/* adjust positioning of the navbar when screen is minimized */
 @media (max-width: 650px) {
     nav {
       margin-top: 10px;
@@ -76,6 +78,7 @@ header {
     }
 }
 
+/* styling for the background image */
 .background-image {
     margin-top: 50px;
     display: flex;
@@ -87,19 +90,37 @@ header {
     background-image: url(../images/187170.jpg);
 }
 
+/* styling for welcome comment on background image */
+.background-image p {
+    font-size: 40px;
+    text-align: center;
+}
+
 /* main content  */
 main {
     max-width: 80%;
     margin: 0 auto;
 }
 
- /* for each article section */
+.left-content{
+    width: 10vw;
+}
+
+ /* styling for each article section */
 .main-content{
     margin: 20px auto;
     display: flex;
     align-items: center;
     flex: 1;
+    gap: 20px;
 }
+
+/* styling for the about me text  */
+.about-me-text {
+    font-size: 30px;
+}
+
+/* displays border separating the heading and content in the main page */
 .content {
     border-left: 5px solid #574935;
     padding-left: 20px;
@@ -112,7 +133,12 @@ h2 {
     font-size: 2rem;
     margin-right: 30px
 }
+
+/* adjusts styling when page is minimized smaller */
 @media screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+    }
     .nav-list {
         width: 100%;
     }
@@ -125,7 +151,8 @@ h2 {
     }
 }
 
-@media screen and (max-width: 320px) {
+/* adjusts styling when screen is closer to the mobile size */
+@media screen and (max-width: 425px) {
 
     .background-image {
         margin-top: 170px;
@@ -151,28 +178,39 @@ h2 {
         display: flex;
         flex-direction: column;
         order: 2;
+        align-content: center;
     }
     header {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .about-me-text {
+        font-size: 20px;
+    }
 }
 
-.card-container {
+/* displays grid like layout for the work section */
+#card-container {
     display: flex;
     flex-flow: row wrap-reverse;
     margin: 2rem auto;
     gap: 1rem;
 }
+
+/* controls height for each work card */
 .project {
     flex: 1 1 40%;
     height: 20vh;
 }
 
+/* allows the first card to be larger than the rest */
+/* container wrapped reverse which is why using psuedo element last of type */
 .project:last-of-type {
     height: 40vh;
 }
 
+/* adjusts card styling when screen is smaller */
 @media screen and (max-width: 600px) {
     .project {
         flex: 1 1 100%;
@@ -183,6 +221,7 @@ h2 {
     }
 }
 
+/* styling for the images that cover the cards  */
 .project-image {
     height: 100%;
     width: 100%;
@@ -190,6 +229,7 @@ h2 {
     border: 10px solid #574935;
 }
 
+/* styling for the text on top of each card  */
 .project p{
     transform: translateY(-60px);
     padding: 10px;
@@ -203,17 +243,41 @@ h2 {
     padding: 30px 0;
 }
 
-.contact-list {
+/* styling for the contact links  */
+#contact-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
 }
 
-.left, .contact-left {
-    width: 10vw;
+
+
+/* styling for each link in the contacts */
+.contact-details {
+    /* inline block allows the link to move since the height and width are adjustable */
+    display: inline-block; 
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    transition: transform 0.3s ease-out;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px rgb(63, 61, 61);
 }
 
+ /* styling for the hover effect on the contact links */
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+/* styling for the contact section to adjust for slightly smaller size screen */
+@media screen and (max-width: 768px) {
+    .contact-details {
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* adjusts styling for mobile screens for the contact section */
 @media screen and (max-width: 320px) {
     .contact-list {
         flex-direction: column;
@@ -229,4 +293,3 @@ h2 {
         padding: 0;
     }
 }
-
