@@ -24,8 +24,8 @@ Fullscreen screenshot:
 Mobile Screenshots:
 
 ![website screenshot](./Assets/images/mobile1.PNG)
-![website screenshot](./Assets/images/mobile1.PNG)
-![website screenshot](./Assets/images/mobile1.PNG)
+![website screenshot](./Assets/images/mobile2.PNG)
+![website screenshot](./Assets/images/mobile3.PNG)
 
 In-between sizing with margin issue:
 

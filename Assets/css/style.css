@@ -265,6 +265,7 @@ h2 {
 }
 
  /* styling for the hover effect on the contact links */
+ /* allows text to move down when hovered over */
 .contact-details:hover {
     transform: translateY(8px);
 }
